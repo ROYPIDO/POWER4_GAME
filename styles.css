@@ -1,0 +1,36 @@
+table {
+    background-color: blue;
+    padding: 10px;
+}
+
+td {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.token {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.red {
+    position: relative;
+    background-color: red;
+    animation-name: putToken;
+    animation-duration: 1s;
+}
+
+.yellow {
+    position: relative;
+    background-color: yellow;
+    animation-name: putToken;
+    animation-duration: 0.5s;
+}
+
+@keyframes putToken {
+    from {bottom: 100vh}
+    to {bottom: 0}
+}
